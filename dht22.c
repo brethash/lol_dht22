@@ -132,10 +132,10 @@ int main (int argc, char *argv[])
 
   while (read_dht22_dat() == 0 && tries--) 
   {
-     delay(1000); // wait 1sec to refresh
+     delay(200); // wait 1sec to refresh
   }
 
-  delay(1500);
+  delay(500);
   close_lockfile(lockfd);
 
   return 0 ;
